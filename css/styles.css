@@ -105,9 +105,9 @@
      * color-2(#eb5e55)
      * color-3(#f2d0a4)
      */
-  --color-1: hsla(345, 93%, 44%, 1);
-  --color-2: hsla(4, 79%, 63%, 1);
-  --color-3: hsla(34, 75%, 80%, 1);
+  --color-1: #8c0303;
+  --color-2: #eb5e55;
+  --color-3: #f2d0a4;
 
   /* theme color variations
      */
@@ -3121,7 +3121,7 @@ input::-moz-focus-inner {
 .s-header {
   z-index: 100;
   width: 100%;
-  height: 8.8rem;
+  height: 11rem;
   position: absolute;
   top: var(--vspace-0_75);
   left: 0;
@@ -3162,7 +3162,7 @@ input::-moz-focus-inner {
 }
 
 .s-header__content {
-  height: 8.8rem;
+  height: 11rem;
   position: relative;
 }
 
@@ -3179,7 +3179,7 @@ input::-moz-focus-inner {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: absolute;
-  left: 8rem;
+  left: 3rem;
   top: calc(50% - 2px);
   width: auto;
 }
@@ -3192,8 +3192,8 @@ input::-moz-focus-inner {
 }
 
 .s-header__logo img {
-  width: 225px;
-  height: 75px;
+  width: 70%;
+  /* height: 75px; */
   margin-bottom: 0;
 }
 
@@ -3202,6 +3202,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-header__nav-wrap {
   padding-left: 31.6rem;
+  height: stretch;
 }
 
 .s-header__nav {
@@ -3212,9 +3213,15 @@ input::-moz-focus-inner {
   line-height: 6rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
+  padding-right: 2rem;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.4em;
+  text-align: right;
+  height: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .s-header__nav a {
@@ -3230,6 +3237,7 @@ input::-moz-focus-inner {
   display: inline-block;
   padding-left: 0;
   margin: 0 1rem;
+  font-size: 3rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3382,10 +3390,10 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1700px) {
   .s-header__logo {
-    left: 6rem;
+    left: 2rem;
   }
   .s-header__nav-wrap {
-    padding-left: 19.6rem;
+    padding-left: 31.6rem;
   }
   .s-header__content .btn {
     right: 6rem;
@@ -3394,17 +3402,17 @@ input::-moz-focus-inner {
 
 @media screen and (max-width: 1000px) {
   .s-header__nav-wrap {
-    padding-left: 17.6rem;
+    padding-left: 24.6rem;
   }
   .s-header__content .btn {
     --btn-height: calc(var(--vspace-btn) - 1.6rem) !important;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1090px) {
   .s-header {
     top: var(--vspace-0_5);
-    height: 8rem;
+    height: 11rem;
   }
   .s-header.sticky .s-header__content .btn,
   .s-header .s-header__content .btn {
@@ -3519,7 +3527,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width: 600px) {
   .s-header__logo {
-    left: 4rem;
+    left: 2rem;
   }
   .s-header__menu-toggle {
     right: 4rem;
@@ -4046,7 +4054,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 400px) {
   .s-header__logo {
-    left: 3.2rem;
+    left: 2rem;
   }
   .s-header__menu-toggle {
     right: 3.2rem;
@@ -4813,7 +4821,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 1200px) {
   .s-contact__email {
-    font-size: 10vw;
+    font-size: 7vw;
   }
 }
 

@@ -3140,7 +3140,7 @@ input::-moz-focus-inner {
 }
 
 .s-header.sticky {
-  background-color: var(--color-gray-19);
+  background-color: white !important;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -3225,18 +3225,18 @@ input::-moz-focus-inner {
 }
 
 .s-header__nav a {
-  color: var(--color-gray-8);
+  color: var(--color-gray-11);
 }
 
 .s-header__nav a:hover,
 .s-header__nav a:focus {
-  color: white !important;
+  color: var(--color-gray-17) !important;
 }
 
 .s-header__nav li {
   display: inline-block;
   padding-left: 0;
-  margin: 0 1rem;
+  margin: 0 2rem;
   font-size: 3rem;
 }
 
